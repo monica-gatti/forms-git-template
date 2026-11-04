@@ -19,7 +19,7 @@ Legend: 🟢 confirmed · 🟡 to confirm · 🔴 cancelled
 
 | Date | Special Guest Speech | Special Guest | Yeeso Team | Status Special Guest | Icebreaker | COM lnk |
 |------|-------|---------------|------------|--------|---|---|
-| Fri 2026-12-04 |  |  |  | 🟡 |  |  |
+| Fri 2026-12-04 | Lightning Talk: REX de mon système IA local | Romy Alula | Monica, Greg, Aurélia, Floriane | 🟡 |  |  |
 | Fri 2026-12-11 |  |  |  | 🟡 |  |  |
 | Fri 2026-12-18 |  |  |  | 🟡 |  |  |
 
