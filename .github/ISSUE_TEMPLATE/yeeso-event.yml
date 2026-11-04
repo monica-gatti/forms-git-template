@@ -1,0 +1,71 @@
+name: Yeeso Coffee event
+description: Create, edit or delete a Yeeso Coffee event (no Markdown needed)
+title: "[Yeeso Coffee] "
+labels: ["yeeso-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the form, then click **Submit new issue**. The events page is updated automatically within a minute.
+        **To edit an existing event:** use the same date. Fields left empty keep their current value. Type `-` to clear a field.
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: Action
+      options:
+        - Create or edit
+        - Delete
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Format YYYY-MM-DD
+      placeholder: "2026-11-06"
+    validations:
+      required: true
+
+  - type: input
+    id: speech
+    attributes:
+      label: Special Guest Speech
+      placeholder: "Lightning Talk: ..."
+
+  - type: input
+    id: guest
+    attributes:
+      label: Special Guest
+      placeholder: "First name Last name"
+
+  - type: input
+    id: team
+    attributes:
+      label: Yeeso Team
+      description: Names separated by commas
+      placeholder: "Monica, Greg, Aurélia, Floriane"
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status Special Guest
+      description: Leave empty to keep the current status (new events default to "To confirm")
+      options:
+        - 🟡 To confirm
+        - 🟢 Confirmed
+        - 🔴 Cancelled
+
+  - type: input
+    id: icebreaker
+    attributes:
+      label: Icebreaker
+
+  - type: input
+    id: com
+    attributes:
+      label: COM link
+      description: Link to the communication post (shown as ✅)
+      placeholder: "https://www.linkedin.com/..."

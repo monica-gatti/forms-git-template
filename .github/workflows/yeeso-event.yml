@@ -1,0 +1,51 @@
+name: Update Yeeso Coffee events
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch: # allows regenerating EVENTS.md manually
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: yeeso-events
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (contains(github.event.issue.labels.*.name, 'yeeso-event') &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Apply form and rebuild EVENTS.md
+        id: build
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node scripts/yeeso-events.mjs
+
+      - name: Commit changes
+        if: steps.build.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/events.json EVENTS.md
+          git diff --cached --quiet || git commit -m "Yeeso Coffee: update events (#${{ github.event.issue.number }})"
+          git push
+
+      - name: Close issue with result
+        if: always() && github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          MSG=$(cat result.txt 2>/dev/null || echo "Something went wrong, please check the workflow logs.")
+          gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }} --comment "$MSG"
