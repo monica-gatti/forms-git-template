@@ -10,7 +10,7 @@ Legend: 🟢 confirmed · 🟡 to confirm · 🔴 cancelled
 |------|-------|---------------|------------|--------|---|---|
 | Fri 2026-11-06 | Présentation métier: Fullstack Web Developer (JavaScript / TypeScript, Python), AI champion / Instructor | Romy Alula | Monica, Greg, Aurélia, Floriane | 🟢 |  | ✅ |
 | Fri 2026-11-13 | Lightning Talk: Présentation d'un prototype réalisé avec Figma. UX/UI, Figma. | Alizée Ullern | Monica, Greg, Aurélia, Floriane | 🟢 |  |  |
-| Fri 2026-11-20 | Demo inversée: Ponytail | Aurélia Pic | Monica, Greg, Aurélia, Floriane | 🟡 |  |  |
+| Fri 2026-11-20 | Demo inversée: Ponytail | Aurélia Pic | Monica, Greg, Aurélia, Floriane | 🟢 |  |  |
 | Fri 2026-11-27 |  |  | Monica, Greg, Aurélia, Floriane | None |  |  |
 
 ---
