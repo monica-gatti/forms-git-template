@@ -44,3 +44,11 @@ Legend: 🟢 confirmed · 🟡 to confirm · 🔴 cancelled
 | Fri 2027-02-12 |  |  |  | 🟡 |  |  |
 | Fri 2027-02-19 |  |  |  | 🟡 |  |  |
 | Fri 2027-02-26 |  |  |  | 🟡 |  |  |
+
+---
+
+## March 2027
+
+| Date | Special Guest Speech | Special Guest | Yeeso Team | Status Special Guest | Icebreaker | COM lnk |
+|------|-------|---------------|------------|--------|---|---|
+| Fri 2027-03-05 |  |  |  | None |  |  |
