@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-03-05",
+    "speech": "",
+    "guest": "",
+    "team": "",
+    "status": "None",
+    "icebreaker": "",
+    "com": ""
+  },
+  {
     "date": "2026-11-06",
     "speech": "Présentation métier: Fullstack Web Developer (JavaScript / TypeScript, Python), AI champion / Instructor",
     "guest": "Romy Alula",
