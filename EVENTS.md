@@ -4,14 +4,6 @@
 
 Legend: 🟢 confirmed · 🟡 to confirm · 🔴 cancelled
 
-## March 2026
-
-| Date | Special Guest Speech | Special Guest | Yeeso Team | Status Special Guest | Icebreaker | COM lnk |
-|------|-------|---------------|------------|--------|---|---|
-| Thu 2026-03-05 |  |  |  | None |  |  |
-
----
-
 ## November 2026
 
 | Date | Special Guest Speech | Special Guest | Yeeso Team | Status Special Guest | Icebreaker | COM lnk |
